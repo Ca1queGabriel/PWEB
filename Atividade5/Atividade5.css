@@ -1,0 +1,87 @@
+.caixa {
+    width: 500px;
+    height: 500px;
+    /*  display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+    /*  position: relative;*/
+}
+
+/*
+.caixa h2 {
+    margin: 0;
+    color: #333;
+    font-size: 40px;
+    position: relative;
+}
+*/
+@media screen and (max-width: 420px) {
+    .caixa {
+        background-color: grey;
+    }
+
+    h2::before {
+        content: "cinza";
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+    .caixa {
+        background-color: rgb(244, 100, 10);
+    }
+
+    h2::before {
+        content: "laranja";
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .caixa {
+        background-color: pink;
+    }
+
+    h2::before {
+        content: "rosa";
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1080px) {
+    .caixa {
+        background-color: rgb(244, 8, 8);
+    }
+
+    h2::before {
+        content: "vermelho";
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1366px) {
+    .caixa {
+        background-color: rgb(39, 14, 234);
+    }
+
+    h2::before {
+        content: "azul";
+    }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    .caixa {
+        background-color: rgb(240, 240, 12);
+    }
+
+    .caixa h2::before {
+        content: "amarelo";
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .caixa {
+        background-color: rgb(39, 240, 8);
+    }
+
+    h2::before {
+        content: "verde";
+    }
+}
